@@ -2,19 +2,24 @@ import React from "react";
 import ConnectedTodos from "./Todo";
 import ConnectedGoals from "./Goals";
 import { connect } from "react-redux";
-import handleInitialData from "../actions/shared";
+import { handleInitialData } from "../actions/shared";
 
 class App extends React.Component {
   componentDidMount() {
+    const { dispatch } = this.props;
     dispatch(handleInitialData());
   }
   render() {
-    if (loading === true) {
-      return <h3>Loading</h3>;
+    if (this.props.loading === true) {
+      return (
+        <h3 style={{ textAlign: "center", fontSize: 200, color: "gray" }}>
+          Loading
+        </h3>
+      );
     }
 
     return (
-      <div>
+      <div style={{ textAlign: "center" }}>
         <ConnectedTodos />
         <ConnectedGoals />
       </div>

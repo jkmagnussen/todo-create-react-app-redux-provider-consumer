@@ -23,6 +23,7 @@ class Goals extends React.Component {
           placeholder="Add Goal"
           ref={(input) => (this.input = input)}
         />
+        <br />
         <button onClick={this.addItem}>Add Goal</button>
 
         <List items={this.props.goals} remove={this.removeItem} />

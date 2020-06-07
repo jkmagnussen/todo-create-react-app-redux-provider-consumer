@@ -4,7 +4,7 @@ export default function List(props) {
   return (
     <ul>
       {props.items.map((item) => (
-        <li key={item.id}>
+        <li style={{ listStyleType: "none" }} key={item.id}>
           <span
             onClick={() => props.toggle && props.toggle(item.id)}
             style={{

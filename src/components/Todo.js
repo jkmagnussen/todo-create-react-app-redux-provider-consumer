@@ -30,6 +30,7 @@ class Todos extends React.Component {
           placeholder="Add Todo"
           ref={(input) => (this.input = input)}
         />
+        <br />
         <button onClick={this.addItem}>Add Todo</button>
 
         <List
