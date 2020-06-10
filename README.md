@@ -1,4 +1,4 @@
-Api data info:
+Api data details:
 
 (function () {
 window.API = {}
