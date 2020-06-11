@@ -1,3 +1,5 @@
+Todo redux project
+
 Api data details:
 
 (function () {
