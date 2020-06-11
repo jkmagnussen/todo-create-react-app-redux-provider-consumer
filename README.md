@@ -1,4 +1,4 @@
-Todo redux project
+Todo redux project in which the state resides independantly from the compoents and is fed in as and when nescesary without any "state drilling" through components.
 
 Api data details:
 
